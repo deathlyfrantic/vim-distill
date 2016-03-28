@@ -41,19 +41,18 @@ highlight  Normal                guifg=#e2e4e9 guibg=#000000 gui=NONE
 highlight  Visual                guifg=#e2e4e9 guibg=#274c77 gui=NONE
 
 highlight  CursorLine                          guibg=#16181d gui=NONE
-highlight  CursorLineNr          guifg=#bcbccd guibg=#16181d gui=NONE
-highlight  CursorColumn          guifg=#e2e4e9 guibg=#373b48 gui=NONE
-highlight  ColorColumn                         guibg=#16181d gui=NONE
+highlight  CursorLineNr          guifg=#7d849b guibg=#16181d gui=NONE
+highlight! link                  CursorColumn                CursorLine
+highlight! link                  ColorColumn                 CursorLine
 
 highlight  StatusLine            guifg=#bcbccd guibg=#373b48 gui=NONE
 highlight  StatusLineNC          guifg=#444554 guibg=#0b0c0e gui=NONE
 
-highlight  LineNr                guifg=#7d849b guibg=#000000 gui=NONE
+highlight  LineNr                guifg=#555b6e               gui=NONE
 highlight  WildMenu              guifg=#e2e4e9 guibg=#646b82 gui=NONE
 highlight  VertSplit             guifg=#595f73               gui=NONE
 highlight  PmenuSbar             guifg=#7d849b guibg=#595f73 gui=bold
 highlight  PmenuThumb                          guibg=#8c92a6 gui=bold
-
 highlight! link                  Pmenu                       StatusLine
 highlight! link                  PmenuSel                    WildMenu
 highlight! link                  SignColumn                  LineNr
