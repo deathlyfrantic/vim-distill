@@ -68,11 +68,11 @@ highlight! link                  CtrlPMode2                  StatusLine
 
 highlight  Directory             guifg=#aa9b6d               gui=bold
 highlight  Underlined            guifg=#af5f00               gui=NONE
-
 highlight  Question              guifg=#618ca8               gui=bold
 highlight  MoreMsg               guifg=#f2b58c               gui=bold
 highlight  WarningMsg            guifg=#f28123               gui=bold
 highlight  ErrorMsg              guifg=#e85555 guibg=NONE    gui=bold
+highlight! link                  ModeMsg                     Directory
 
 highlight  Comment               guifg=#555b6e               gui=italic
 highlight  vimCommentTitleLeader guifg=#bcbccd               gui=italic
