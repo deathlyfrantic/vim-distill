@@ -163,6 +163,13 @@ highlight  GitGutterChange       guifg=#f5e884 guibg=#000000 gui=NONE
 highlight  GitGutterDelete       guifg=#e85555 guibg=#000000 gui=NONE
 highlight! link                  GitGutterChangeDelete       GitGutterChange
 
+highlight  SneakPluginTarget     guifg=#db5461               gui=bold,underline
+highlight  SneakStreakMask       guifg=#274c77 guibg=#274c77 gui=NONE
+highlight  SneakStreakStatusLine guifg=#bcbccd guibg=#274c77 gui=NONE
+highlight! link                  SneakStreakTarget           SneakPluginTarget
+
+highlight! link                  SneakPluginScope            Visual
+
 highlight  vimMapModKey          guifg=#87b677               gui=NONE
 highlight! link                  vimNotation                 vimMapModKey
 
