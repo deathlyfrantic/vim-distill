@@ -176,5 +176,10 @@ highlight! link                  vimNotation                 vimMapModKey
 highlight! link                  cssImportant                WarningMsg
 
 highlight! link                  cFormat                     Preproc
+highlight! link                  cBraces                     phpParent
+highlight! link                  cDelimiter                  DiffFile
+highlight! link                  cStructure                  Identifier
+highlight! link                  cCharacter                  Constant
+highlight! link                  cSpecialCharacter           cCharacter
 " }}}
 " vim: foldmethod=marker
