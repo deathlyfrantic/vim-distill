@@ -79,7 +79,10 @@ highlight  vimCommentTitle       guifg=#bcbccd               gui=italic
 highlight  vimCommentString      guifg=#8c92a6               gui=italic
 highlight  Conceal               guifg=#555b6e guibg=#000000 gui=NONE
 
-highlight  SpellCap              guifg=#e2e4e9 guibg=#618ca8 gui=bold
+highlight  SpellBad              guifg=#e85555               gui=underline
+highlight  SpellCap              guifg=#f28123               gui=underline
+highlight  SpellRare             guifg=#f2b58c               gui=underline
+highlight! link                  SpellLocal                  SpellBad
 
 highlight  SpecialKey            guifg=#4e5365               gui=NONE
 highlight  NonText               guifg=#a00c3e               gui=NONE
