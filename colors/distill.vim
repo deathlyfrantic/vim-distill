@@ -158,6 +158,13 @@ highlight  StatusReplace         guifg=#000000 guibg=#618ca8 gui=NONE
 highlight  StatusVisual          guifg=#000000 guibg=#ad6a6c gui=NONE
 highlight  StatusTerm            guifg=#000000 guibg=#4b7f52 gui=NONE
 
+highlight  mailQuoted1           guifg=#618ca8               gui=NONE
+highlight  mailQuoted2           guifg=#8baa81               gui=NONE
+highlight  mailQuoted3           guifg=#9a879d               gui=NONE
+highlight  mailQuoted4           guifg=#ad6a6c               gui=NONE
+highlight  mailQuoted5           guifg=#aa9b6d               gui=NONE
+highlight  mailQuoted6           guifg=#7d849b               gui=NONE
+
 highlight  SyntasticWarning      guifg=#f5e884 guibg=#875f00 gui=bold
 highlight  SyntasticError        guifg=#ed7878 guibg=#700f0f gui=bold
 
