@@ -22,8 +22,8 @@
 " initialization {{{
 let g:colors_name = 'distill'
 
-if has('gui_running') && (has('nvim') && $NVIM_TUI_ENABLE_TRUE_COLOR)
-    echoe 'The ' . g:colors_name . ' colorscheme requires a 24-bit color Vim (Neovim or Gvim).'
+if !has('gui_running') && !(&termguicolors)
+    echoerr 'The ' . g:colors_name . ' colorscheme requires a 24-bit color Vim (Neovim or Gvim).'
     finish
 endif
 
@@ -191,5 +191,7 @@ highlight! link                  cDelimiter                  DiffFile
 highlight! link                  cStructure                  Identifier
 highlight! link                  cCharacter                  Constant
 highlight! link                  cSpecialCharacter           cCharacter
+
+highlight! link                  jsonQuote                   phpParent
 " }}}
 " vim: foldmethod=marker
