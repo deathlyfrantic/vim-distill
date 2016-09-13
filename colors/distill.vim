@@ -153,6 +153,8 @@ highlight! link                  diffAdded                   DiffAdd
 highlight! link                  diffChanged                 DiffChange
 highlight! link                  diffRemoved                 DiffDelete
 
+highlight! link                  Noise                       DiffFile
+
 highlight  StatusInsert          guifg=#000000 guibg=#aa9b6d gui=NONE
 highlight  StatusReplace         guifg=#000000 guibg=#618ca8 gui=NONE
 highlight  StatusVisual          guifg=#000000 guibg=#ad6a6c gui=NONE
@@ -177,7 +179,6 @@ highlight  SneakPluginTarget     guifg=#db5461               gui=bold,underline
 highlight  SneakStreakMask       guifg=#274c77 guibg=#274c77 gui=NONE
 highlight  SneakStreakStatusLine guifg=#bcbccd guibg=#274c77 gui=NONE
 highlight! link                  SneakStreakTarget           SneakPluginTarget
-
 highlight! link                  SneakPluginScope            Visual
 
 highlight  vimMapModKey          guifg=#87b677               gui=NONE
@@ -193,5 +194,12 @@ highlight! link                  cCharacter                  Constant
 highlight! link                  cSpecialCharacter           cCharacter
 
 highlight! link                  jsonQuote                   phpParent
+highlight! link                  jsFuncCall                  Function
+highlight! link                  jsObjectKey                 Identifier
+highlight! link                  jsVariableDef               Identifier
+highlight! link                  jsParens                    phpParent
+highlight! link                  jsBraces                    phpParent
+highlight! link                  jsFuncBraces                jsBraces
+highlight! link                  jsObjectBraces              jsBraces
 " }}}
 " vim: foldmethod=marker
