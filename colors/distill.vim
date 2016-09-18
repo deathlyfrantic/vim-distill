@@ -116,6 +116,7 @@ highlight  TODO                  guifg=#f28123 guibg=NONE    gui=bold,underline
 highlight  phpStringDelimeter    guifg=#875f00               gui=NONE
 highlight  phpParent             guifg=#5d573c               gui=NONE
 highlight  phpDocIdentifier      guifg=#618ca8               gui=italic
+highlight  phpKeyword            guifg=#ad6a6c               gui=bold
 highlight! link                  phpFunctions                Function
 highlight! link                  phpFunction                 Function
 highlight! link                  phpMemberSelector           Operator
@@ -189,6 +190,7 @@ highlight! link                  cssImportant                WarningMsg
 highlight! link                  cFormat                     Preproc
 highlight! link                  cBraces                     phpParent
 highlight! link                  cDelimiter                  DiffFile
+highlight! link                  cUserCont                   cDelimiter
 highlight! link                  cStructure                  Identifier
 highlight! link                  cCharacter                  Constant
 highlight! link                  cSpecialCharacter           cCharacter
