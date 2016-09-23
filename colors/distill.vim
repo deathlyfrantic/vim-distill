@@ -48,7 +48,7 @@ highlight! link                  ColorColumn                 CursorLine
 highlight  StatusLine            guifg=#bcbccd guibg=#373b48 gui=NONE
 highlight  StatusLineNC          guifg=#444554 guibg=#0b0c0e gui=NONE
 
-highlight  LineNr                guifg=#555b6e               gui=NONE
+highlight  LineNr                guifg=#373b48               gui=NONE
 highlight  WildMenu              guifg=#e2e4e9 guibg=#646b82 gui=NONE
 highlight  VertSplit             guifg=#595f73               gui=NONE
 highlight  PmenuSbar             guifg=#7d849b guibg=#595f73 gui=bold
@@ -57,13 +57,11 @@ highlight! link                  Pmenu                       StatusLine
 highlight! link                  PmenuSel                    WildMenu
 highlight! link                  SignColumn                  LineNr
 highlight! link                  FoldColumn                  LineNr
-highlight! link                  Folded                      LineNr
+highlight! link                  Folded                      Comment
 highlight! link                  TabLine                     StatusLine
 highlight! link                  TabLineSel                  WildMenu
 highlight! link                  TabLineFill                 StatusLine
 highlight! link                  TabLineClose                WildMenu
-highlight! link                  CtrlPMode1                  StatusLine
-highlight! link                  CtrlPMode2                  StatusLine
 
 highlight  Directory             guifg=#aa9b6d               gui=bold
 highlight  Underlined            guifg=#af5f00               gui=NONE
@@ -113,6 +111,9 @@ highlight  Operator              guifg=#ba8730               gui=NONE
 
 highlight  TODO                  guifg=#f28123 guibg=NONE    gui=bold,underline
 
+highlight! link                  Noise                       DiffFile
+
+" filetypes {{{
 highlight  phpStringDelimeter    guifg=#875f00               gui=NONE
 highlight  phpParent             guifg=#5d573c               gui=NONE
 highlight  phpDocIdentifier      guifg=#618ca8               gui=italic
@@ -154,33 +155,12 @@ highlight! link                  diffAdded                   DiffAdd
 highlight! link                  diffChanged                 DiffChange
 highlight! link                  diffRemoved                 DiffDelete
 
-highlight! link                  Noise                       DiffFile
-
-highlight  StatusInsert          guifg=#000000 guibg=#aa9b6d gui=NONE
-highlight  StatusReplace         guifg=#000000 guibg=#618ca8 gui=NONE
-highlight  StatusVisual          guifg=#000000 guibg=#ad6a6c gui=NONE
-highlight  StatusTerm            guifg=#000000 guibg=#4b7f52 gui=NONE
-
 highlight  mailQuoted1           guifg=#618ca8               gui=NONE
 highlight  mailQuoted2           guifg=#8baa81               gui=NONE
 highlight  mailQuoted3           guifg=#9a879d               gui=NONE
 highlight  mailQuoted4           guifg=#ad6a6c               gui=NONE
 highlight  mailQuoted5           guifg=#aa9b6d               gui=NONE
 highlight  mailQuoted6           guifg=#7d849b               gui=NONE
-
-highlight  SyntasticWarning      guifg=#f5e884 guibg=#875f00 gui=bold
-highlight  SyntasticError        guifg=#ed7878 guibg=#700f0f gui=bold
-
-highlight  GitGutterAdd          guifg=#87b677 guibg=#000000 gui=NONE
-highlight  GitGutterChange       guifg=#f5e884 guibg=#000000 gui=NONE
-highlight  GitGutterDelete       guifg=#e85555 guibg=#000000 gui=NONE
-highlight! link                  GitGutterChangeDelete       GitGutterChange
-
-highlight  SneakPluginTarget     guifg=#db5461               gui=bold,underline
-highlight  SneakStreakMask       guifg=#274c77 guibg=#274c77 gui=NONE
-highlight  SneakStreakStatusLine guifg=#bcbccd guibg=#274c77 gui=NONE
-highlight! link                  SneakStreakTarget           SneakPluginTarget
-highlight! link                  SneakPluginScope            Visual
 
 highlight  vimMapModKey          guifg=#87b677               gui=NONE
 highlight! link                  vimNotation                 vimMapModKey
@@ -203,5 +183,25 @@ highlight! link                  jsParens                    phpParent
 highlight! link                  jsBraces                    phpParent
 highlight! link                  jsFuncBraces                jsBraces
 highlight! link                  jsObjectBraces              jsBraces
+" }}}
+
+" plugins {{{
+highlight  SyntasticWarning      guifg=#f5e884 guibg=#875f00 gui=bold
+highlight  SyntasticError        guifg=#ed7878 guibg=#700f0f gui=bold
+
+highlight  GitGutterAdd          guifg=#87b677 guibg=#000000 gui=NONE
+highlight  GitGutterChange       guifg=#f5e884 guibg=#000000 gui=NONE
+highlight  GitGutterDelete       guifg=#e85555 guibg=#000000 gui=NONE
+highlight! link                  GitGutterChangeDelete       GitGutterChange
+
+highlight! link                  CtrlPMode1                  StatusLine
+highlight! link                  CtrlPMode2                  StatusLine
+
+highlight  SneakPluginTarget     guifg=#db5461               gui=bold,underline
+highlight  SneakStreakMask       guifg=#274c77 guibg=#274c77 gui=NONE
+highlight  SneakStreakStatusLine guifg=#bcbccd guibg=#274c77 gui=NONE
+highlight! link                  SneakStreakTarget           SneakPluginTarget
+highlight! link                  SneakPluginScope            Visual
+" }}}
 " }}}
 " vim: foldmethod=marker
