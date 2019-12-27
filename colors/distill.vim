@@ -20,8 +20,6 @@
 " OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 " initialization {{{
-let g:colors_name = 'distill'
-
 if !has('gui_running') && !(&termguicolors)
     echoerr 'The ' . g:colors_name . ' colorscheme requires a 24-bit color Vim (Neovim or Gvim).'
     finish
@@ -30,6 +28,8 @@ endif
 set background=dark
 
 highlight clear
+
+let g:colors_name = 'distill'
 
 if exists('syntax_on')
     syntax reset
